@@ -14,7 +14,8 @@ std::string exec(const char* cmd) {
     return result;
 }
 
-/* The ifstream object is a assigned a "false" value if a file is not found.
+/*
+ * The ifstream object is a assigned a "false" value if a file is not found.
  * Exploiting that behaviour to check if a file exist
 */
 bool fexists(const std::string &filepath){

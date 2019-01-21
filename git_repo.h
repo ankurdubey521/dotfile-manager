@@ -18,7 +18,6 @@
  *      git_rm(): Executes git rm on passed file path
  */
 
-
 #ifndef DOTFILE_MANAGER_GIT_REPO_H
 #define DOTFILE_MANAGER_GIT_REPO_H
 
