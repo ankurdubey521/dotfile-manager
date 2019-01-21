@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ankurdubey/Code/dotfile-manager/config.cpp
+config.h
+/home/ankurdubey/Code/dotfile-manager/config.h
+
+/home/ankurdubey/Code/dotfile-manager/config.h
+string
+-
+map
+-
+fstream
+-
+cstdlib
+-
+misc.h
+/home/ankurdubey/Code/dotfile-manager/misc.h
+
+/home/ankurdubey/Code/dotfile-manager/misc.h
+cstdio
+-
+iostream
+-
+memory
+-
+stdexcept
+-
+string
+-
+array
+-
+fstream
+-
+sys/stat.h
+-
+sys/types.h
+-
+
