@@ -66,7 +66,7 @@ void config::_populate_config_values() {
 
 /*
  * config::write_config_file():
- * deleted the saved configuration file and replaces it with values in config_values
+ * deletes the saved configuration file and replaces it with values in config_values
  */
 void config::write_config_file() const{
     std::ofstream configfile(_config_file_path, std::ios::trunc);

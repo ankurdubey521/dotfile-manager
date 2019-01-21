@@ -30,6 +30,7 @@
 #include "misc.h"
 
 class config{
+
 private:
     //Members
     std::string _config_file_path,_config_folder_path;

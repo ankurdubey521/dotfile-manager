@@ -19,11 +19,5 @@ int main(int argc, char *argv[]) {
     };
     config cnf(default_folder, "config", config_vals);
     manager t(cnf);
-
-    //t.add_entry(HOME + "/testrc", "test");
-    ///t.add_entry(HOME + "/h/h", "h");
-    //t.deploy_all();
-    //t.pass_to_git("status");
-    t.remove_entry("h");
     return 0;
 }
