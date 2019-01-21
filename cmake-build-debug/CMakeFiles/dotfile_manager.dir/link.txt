@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/dotfile_manager.dir/main.cpp.o CMakeFiles/dotfile_manager.dir/config.cpp.o CMakeFiles/dotfile_manager.dir/git_repo.cpp.o CMakeFiles/dotfile_manager.dir/misc.cpp.o CMakeFiles/dotfile_manager.dir/manager.cpp.o  -o dotfile_manager 

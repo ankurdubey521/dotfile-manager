@@ -1,3 +1,0 @@
-/home/ankurdubey/Code/dotfile-manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ankurdubey/Code/dotfile-manager/cmake-build-debug/CMakeFiles/dotfile_manager.dir
-/home/ankurdubey/Code/dotfile-manager/cmake-build-debug/CMakeFiles/edit_cache.dir
