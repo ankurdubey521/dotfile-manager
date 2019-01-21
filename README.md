@@ -3,7 +3,7 @@
 Program for managing dotfiles and text configuration files on linux
 
 ```  
-  usage: dmgr [-a <absolute path of file> <label>]
+usage: dmgr [-a <absolute path of file> <label>]
             [-e <absolute path of file> <label>]
             [-r <label>]  [-s <label>]  [-u]  [-d]
             [-g <command>]
