@@ -23,10 +23,11 @@
 #ifndef DOTFILE_MANAGER_CONFIG_H
 #define DOTFILE_MANAGER_CONFIG_H
 
-#include <string>
-#include <map>
-#include <fstream>
 #include <cstdlib>
+#include <fstream>
+#include <map>
+#include <string>
+
 #include "misc.h"
 
 class config{

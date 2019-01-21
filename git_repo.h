@@ -21,14 +21,17 @@
 #ifndef DOTFILE_MANAGER_GIT_REPO_H
 #define DOTFILE_MANAGER_GIT_REPO_H
 
-#include <string>
+#include <cctype>
+#include <chrono>
 #include <cstdlib>
 #include <ctime>
-#include <chrono>
+#include <iostream>
+#include <string>
+
 #include "config.h"
 #include "misc.h"
-#include <iostream>
-#include <cctype>
+
+
 
 class git_repo {
 

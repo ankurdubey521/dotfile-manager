@@ -30,3 +30,17 @@ bool IsPathExist(const std::string &s){
     struct stat buffer;
     return (stat (s.c_str(), &buffer) == 0);
 }
+/*
+ *  Encrypts file at plaintext_path using gpg key of gpg_receipient and
+ *  creates encrypted file at ciphertext_path
+ */
+void encrypt(const std::string &gpg_receipient, const std::string &plaintext_path, const std::string &ciphertext_path) {
+    system(std::string("gpg -o " + ciphertext_path + " -e -r \""+ gpg_receipient + "\" " + plaintext_path ).c_str());
+}
+
+/*
+ *  Decrypts file at ciphertext_path and creates file at plaintext_path
+ */
+void decrypt(const std::string &plaintext_path, const std::string &ciphertext_path) {
+    system(std::string("gpg -d -o " + plaintext_path + " " + ciphertext_path).c_str());
+}
