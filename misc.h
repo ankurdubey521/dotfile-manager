@@ -30,4 +30,7 @@ void encrypt(const std::string&, const std::string&, const std::string&);
 //Decrypts a gpg encrypted file
 void decrypt(const std::string&, const std::string&);
 
+//Display help
+void display_help();
+
 #endif //DOTFILE_MANAGER_EXEC_H

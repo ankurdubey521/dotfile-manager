@@ -44,3 +44,22 @@ void encrypt(const std::string &gpg_receipient, const std::string &plaintext_pat
 void decrypt(const std::string &plaintext_path, const std::string &ciphertext_path) {
     system(std::string("gpg -d -o " + plaintext_path + " " + ciphertext_path).c_str());
 }
+
+/*
+ *  For dispaying help
+ */
+void display_help(){
+    std::cout << "usage: dmgr [-a <absolute path of file> <label>]" << std::endl;
+    std::cout << "            [-e <absolute path of file> <label>]" << std::endl;
+    std::cout << "            [-r <label>]  [-s <label>]  [-u]  [-d]" << std::endl;
+    std::cout << "            [-g <command>]" << std::endl;
+    std::cout << std::endl;
+    std::cout << "\t-a <path> <label>   add entry identified by \"label\" at \"path\"" << std::endl;
+    std::cout << "\t-e <path> <label>   add encrypted entry identified by \"label\" at \"path\"" << std::endl;
+    std::cout << "\t-r <label>          remove entry identified by \"label\"" << std::endl;
+    std::cout << "\t-s <label>          remove encrypted entry identified by \"label\"" << std::endl;
+    std::cout << "\t-u                  sync all entries with remote" << std::endl;
+    std::cout << "\t-d                  recreate all deleted config files" << std::endl;
+    std::cout << "\t-g <command>        passes \"command\" to git directly for set repo" << std::endl;
+    std::cout << "Note: Only one command supported at a time as of now" << std::endl;
+}

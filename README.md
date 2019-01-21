@@ -13,7 +13,7 @@ usage: dmgr [-a <absolute path of file> <label>]
         -r <label>          remove entry identified by "label"
         -s <label>          remove encrypted entry identified by "label"
         -u                  sync all entries with remote
-        -d                  recreate symlinks for all entries
+        -d                  recreate all deleted config files
         -g <command>        passes "command" to git directly for set repo
 Note: Only one command supported at a time as of now
 
