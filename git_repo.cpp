@@ -77,5 +77,5 @@ std::string git_repo::path() {
  * git_repo::git_rm()
  */
 void git_repo::git_rm(const std::string &path) {
-    std::system(std::string("git -C " + _repo_path + "rm " + path).c_str());
+    std::system(std::string("git -C " + _repo_path + " rm " + path).c_str());
 }

@@ -48,5 +48,4 @@ public:
     void git_push();
 };
 
-
 #endif //DOTFILE_MANAGER_GIT_REPO_H

@@ -18,10 +18,6 @@ cstdlib
 misc.h
 /home/ankurdubey/Code/dotfile-manager/misc.h
 
-/home/ankurdubey/Code/dotfile-manager/git_repo.cpp
-git_repo.h
-/home/ankurdubey/Code/dotfile-manager/git_repo.h
-
 /home/ankurdubey/Code/dotfile-manager/git_repo.h
 string
 -
@@ -51,10 +47,6 @@ vector
 -
 cstdlib
 -
-manager.h
-/home/ankurdubey/Code/dotfile-manager/manager.h
-
-/home/ankurdubey/Code/dotfile-manager/manager.cpp
 manager.h
 /home/ankurdubey/Code/dotfile-manager/manager.h
 

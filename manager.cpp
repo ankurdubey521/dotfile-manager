@@ -83,7 +83,7 @@ void manager::remove_entry(const std::string &label) {
             system(std::string("mv " + destination_path + " " + path).c_str());
 
             //untrack git file
-            _repo.git_rm(destination_path);
+            //_repo.git_rm(destination_path);
 
             //erase entry and update file
             _symlinks.config_values.erase(label);
@@ -116,8 +116,14 @@ void manager::update() {
 void manager::deploy_all() {
     for(auto &p: _symlinks.config_values) {
         if (p.second.length() > 1) {
-            system(std::string("rm " + p.second).c_str());
+            //If any other file exists at that path
+            if(fexists(p.second)) {
+                system(std::string("rm " + p.second).c_str());
+            }
+
+            //destination: ABSOLUTE path where file is stored in repo
             std::string destination_path = _repo.path() + p.second.substr(1, p.second.length() - 1);
+            //Create symlink
             system(std::string("ln -s " + destination_path + " " + p.second).c_str());
             std::cout << "Entry with label " << p.first << " at " << p.second << " recreated" << std::endl;
         }
@@ -132,5 +138,3 @@ void manager::pass_to_git(const std::string &command) {
     std::cout << "git: " << std::flush;
     system(std::string("git -C " + _repo.path() + " " + command).c_str());
 }
-
-
